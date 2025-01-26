@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+text-decoration: none;
+font-weight: 800;
+}
+
+body{
+    background-color: azure;
+    min-height: 100vh;
+    display: flex;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+.container{
+    max-width: 275px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 8px;
+    box-shadow: 5px 5px 10px white;
+    background-color: rgb(14, 11, 11);
+    overflow: hidden;
+    transition-property: all;
+    transition-duration: 3s;
+    transition-delay: 0.4s;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.container:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px 10px  black;
+}
+
+.sect1{
+   color: black;
+   /* padding: 10px; */
+   background-color: rgba(0, 255, 255, 0.879);
+   border-radius: 20px;
+   display: flex;
+   justify-content: space-between;
+   height: 125px;
+  
+
+
+}
+.icon{
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    word-spacing: 10px;
+    font-size: 20px;
+    padding-right: 30px;
+
+}
+.sect1 .sk{
+    height: 30px;
+    width: 120px;
+    background-color: black;
+    transform: skew(-38deg);
+    position: relative;
+    
+    margin: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: -10px;
+  
+    box-shadow: -5px -5px 0 black;
+   
+}
+.sect1 .sk::before{
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    /* background: red; */
+    top: 0;
+    right: -15px;
+    border-top-left-radius: 10px;
+    box-shadow: -5px -5px 0 2px black;
+}
+.container .sect1::before{
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    top: 0;
+    right: -15px;
+    background-color: red;
+    top: 40px;
+    left:0;
+    border-top-left-radius: 15px;
+    box-shadow: -5px -5px 0 2px black;
+}
+h5{
+    color: white;
+    position: absolute;
+    padding-left: 30px;
+    font-size: 20px;
+}
+
+.sect2 h3{
+    color: white;
+    position: relative;
+    padding-left: 40px;
+    margin: 10px auto;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+.sect3{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+button{
+    border-radius: 10px;
+    padding: 10px;
+    background-color:white;
+    
+}
