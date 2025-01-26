@@ -1,0 +1,88 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #d6dce3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Button container styling */
+.btn {
+    position: relative;
+    height: 120px;
+    width: 120px;
+}
+
+input {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 120px;
+    width: 120px;
+    background: linear-gradient(to top, #fafafa, #d0d4d8);
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    z-index: 1;
+    box-shadow: inset -5px -5px 15px #ffffff,
+                inset 5px 5px 15px rgba(0, 0, 0, 0.1),
+                5px 5px 15px rgba(0, 0, 0, 0.2),
+                -5px -5px 15px rgba(255, 255, 255, 0.7);
+}
+
+/* Adding ::before pseudo-element on the .btn container */
+.btn::before {
+    position: absolute;
+    content: '';
+    width: 180px;
+    height: 180px;
+    background: linear-gradient(to bottom, #fafafa, #d0d3d8);
+    border-radius: 50%;
+    z-index: 0;
+    bottom: -30px;
+    left: -30px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Adding ::after pseudo-element on the .btn container */
+.btn::after {
+    position: absolute;
+    content: '';
+    height: 210px;
+    width: 210px;
+    background: #d6dce3;
+    bottom: -48px;
+    left: -45px;
+    z-index: -1;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Label positioning for the icon */
+label {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+/* Icon styling */
+label > .fas {
+    font-size: 50px;
+    color: #a8aaba;
+    transition: color 0.3s ease;
+}
+
+/* Checkbox interaction to change icon color */
+input:checked + label > .fas {
+    color: rgb(150, 150, 12);
+    background-color: yellow;
+}
+
+/* Change gradient when the input is checked */
+input:checked ~ .btn::after {
+    background: linear-gradient(-135deg, #fcace3, #fe5190);
+}
