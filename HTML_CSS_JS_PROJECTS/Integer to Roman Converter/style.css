@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* Card Styling */
+.card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+}
+
+/* Header Styling */
+.h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+/* Calculator Styles */
+.calculator input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.calculator button {
+    background-color: #4a90e2;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.calculator button:hover {
+    background-color: #357ABD;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}

@@ -1,0 +1,54 @@
+.myclass{
+    color: red;
+}
+
+#myid{
+    color:blue;
+}
+
+
+
+h1{
+    color: pink;
+}
+
+
+.mainh button{ 
+ color: yellowgreen;
+ background-color: black;
+}
+
+nav ul{
+    color: aqua;
+    background-color: tomato;
+}
+
+header h1{
+     color: orange;
+     background-color: saddlebrown;
+}
+
+
+h1+div{
+    color: brown;
+    background-color: yellow;
+}
+
+p>a{
+    text-decoration: dotted;
+    font-size: 50px;
+}
+input[type]{
+    font-size: 50px;
+}
+
+
+p:active{
+    background-color: yellowgreen;
+}
+
+input[type="radio"]:checked + label{
+ background-color: black;
+}
+
+
